@@ -111,8 +111,9 @@
     <ul class="nav bs-sidenav">
         <li class="first-level active"><a href="#welcome">Welcome</a></li>
         <li class="first-level "><a href="#bits-and-bobs">Bits and Bobs</a></li>
-        <li class="first-level "><a href="#commands">Commands</a></li>
-        <li class="first-level "><a href="#project-layout">Project layout</a></li>
+        <li class="first-level "><a href="#automations">Automations</a></li>
+        <li class="first-level "><a href="#diy-projects">DIY Projects</a></li>
+        <li class="first-level "><a href="#retired-technologies">Retired Technologies</a></li>
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
@@ -121,21 +122,97 @@
 <p>Hello and welcome to my Home Assistant configuration. Thank you for stopping and checking it out.</p>
 <p>My configuration has moved from running on raspbian to HassIO and finally running under docker on the Intel Nuc.</p>
 <h1 id="bits-and-bobs">Bits and Bobs</h1>
-<p>For full documentation visit <a href="https://mkdocs.org">mkdocs.org</a>.</p>
-<h1 id="_1"></h1>
-<h2 id="commands">Commands</h2>
+<table>
+<thead>
+<tr>
+<th>Device</th>
+<th>Source</th>
+<th>Image</th>
+<th>Device</th>
+<th>Source</th>
+<th>Image</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Raspberry PI III - running hassio</td>
+<td>Element14.com</td>
+<td><a href="https://github.com/cy1701/Home-Assistant-Configuration/blob/master/readme_images/raspberry-pi-3.png&quot; width=&quot;200&quot;/">https://github.com/cy1701/Home-Assistant-Configuration/blob/master/readme_images/raspberry-pi-3.png" width="200"/</a></td>
+<td>Wemo mini switches</td>
+<td>Amazon.com</td>
+<td><img src="https://github.com/cy1701/Home-Assistant-Configuration/blob/master/readme_images/wemo.png" width="200"/></td>
+</tr>
+<tr>
+<td>Phillips hue bulbs gen 1 &amp; 2</td>
+<td>Best Buy</td>
+<td></td>
+<td>Ecobee 4 Thermostat w/Room Sensors</td>
+<td>Amazon</td>
+<td></td>
+</tr>
+<tr>
+<td>Google Home Hub</td>
+<td></td>
+<td><img src="https://github.com/cy1701/Home-Assistant-Configuration/blob/master/readme_images/google%20hub.jpg" width="200"/></td>
+<td>Google Mini</td>
+<td>Various</td>
+<td><img src="https://github.com/cy1701/Home-Assistant-Configuration/blob/master/readme_images/google%20mini.jpg" width="200"/></td>
+</tr>
+<tr>
+<td>Google Chromcast audio</td>
+<td>Walmart</td>
+<td><img src="https://github.com/cy1701/Home-Assistant-Configuration/blob/master/readme_images/chromecast%20audio.jpg" width="200"/></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Roku Mini</td>
+<td>Amazon</td>
+<td><img src="https://github.com/cy1701/Home-Assistant-Configuration/blob/master/readme_images/roku.jpg" width="200"/></td>
+<td>Kodi Players</td>
+<td></td>
+<td><img src="https://github.com/cy1701/Home-Assistant-Configuration/blob/master/readme_images/kodi.jpg" width="200"/></td>
+</tr>
+</tbody>
+</table>
+<h1 id="automations">Automations</h1>
 <ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs help</code> - Print this help message.</li>
+<li>Lower the lights when Kodi is playing</li>
+<li>Low temp notification for basement (broken after move it the NUC)</li>
+<li>Nightlight mode for ceiling lights in kitchen and hall</li>
+<li>Weekly backup service call</li>
 </ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre></div>
+<h1 id="diy-projects">DIY Projects</h1>
+<p>|<img src="https://github.com/cy1701/Home-Assistant-Configuration/blob/master/readme_images/tower.jpg" width="200"/> | Floating Crystal Tower<br />
+This project was based on https://youtu.be/Jh618yi0JZY by DIY Perks. For mine I replaced the individual led channels with an esp8266 controller first running code for standalone wifi device now HA integrated.  The configuration for ESPHome is located in /sanitized_ESPHome/tower.yaml| Full build will be added on my .io site.</p>
+<h1 id="retired-technologies">Retired Technologies</h1>
+<table>
+<thead>
+<tr>
+<th>Device</th>
+<th>Reason</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Wink spotter probes</td>
+<td>Stopped talking</td>
+</tr>
+<tr>
+<td>DIRECTV receiver</td>
+<td>Cut the cord</td>
+</tr>
+<tr>
+<td>Wink PowerPivot Genius</td>
+<td>Went offline randomly</td>
+</tr>
+<tr>
+<td>LimitlessLED bulbs</td>
+<td>(did not want to invest in new bridge. I might pull these back out if I build the ESP8266 milight contoller project.)</td>
+</tr>
+</tbody>
+</table></div>
         
         
     </div>
@@ -193,5 +270,5 @@ docs/
 
 <!--
 MkDocs version : 1.0.4
-Build Date UTC : 2019-02-25 18:18:19
+Build Date UTC : 2019-02-25 19:17:54
 -->
